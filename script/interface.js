@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', ()=>{
 
     let pieces = document.querySelectorAll(".piece")
 
     pieces.forEach((piece)=>{ 
-        pieces.addEventListener("click", handleClick)
+        piece.addEventListener("click", handleClick)
     })
 
 })
 
     function handleClick(event) {
-
+    
         let piece = event.target
         let position = piece.id 
     
