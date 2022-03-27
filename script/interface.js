@@ -13,24 +13,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let piece = event.target
         let position = piece.id 
     
-        handleMove(position)
-        updatePieces()
+        if(handleMove(position)){
+
+            setTimeout(()=> {
+                alert("GAME OVER! -- O VENCEDOR FOI " + playerTime + "!")
+            }, 10)
+            
+        }
+            updatePieces(position)
     }
 
-    function updatePieces() {
+    function updatePieces(position) {
+        let piece = document.getElementById(position.toString())
+        let symbol = board[position]
+        piece.innerHTML = `<div class='${symbol}'></div>`
+    }   
 
-        let pieces = document.querySelectorAll(".piece")
-
-        pieces.forEach((piece)=>{ 
-        
-            let position = piece.id
-            let symbol = board[position]
-
-            if(symbol != '') {
-                piece.innerHTML = `<div class='${symbol}'></div>`
-            }
-
-
-        })
-
-    }
