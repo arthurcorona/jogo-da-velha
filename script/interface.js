@@ -29,3 +29,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         piece.innerHTML = `<div class='${symbol}'></div>`
     }   
 
+    function restart() {
+
+        board = ['', '', '', '', '', '', '', '', '',];
+    playerTime = 0;
+    gameOver = false;
+    document.querySelectorAll(".piece").forEach(piece => piece.innerHTML = "");
+
+    }
+
