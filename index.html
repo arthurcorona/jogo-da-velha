@@ -34,9 +34,36 @@
                 <div id="8" class="piece"></div>
             </div>
 
+
         </div>
         
         <button onclick="restart()">RESTART</button>
+
+        <div class="players">
+
+            <h3 id="playerApple" translate="no">Player IOS</h3> 
+
+            <span class="placares"><span id="placarA"></span>VS<span id="placarD"></span></span>
+
+            <h3 id="playerDroid" translate="no">Player ANDROID</h3>
+
+            <input id="nome" type="text" placeholder="PLAYER 1 (IOS)">
+            <input id="button" type="submit" value="OK">
+
+        </div>
+
+        <div id="windowWinner">
+
+            <p id="p" class="p">CONGRULATIONS!!</p>
+            <div id="display" translate="no"></div>
+            <p class="p">YOU WON!</p>
+
+            <p class="reseting">Reseting game...</p>
+
+        </div>
+
+        <div id="backgroundWinner"></div>
+        
 
     <script src="./script/game.js"></script>
     <script src="./script/interface.js"></script>

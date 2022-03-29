@@ -1,10 +1,12 @@
 //iniciar as var's 
 
     let board = ['', '', '', '', '', '', '', '', '']
-    
+
     let playerTime = 0
     let symbols = ['apple', 'droid']
     let gameOver = false
+    let draw = false;
+
     let winStates = [
         [0,1,2],
         [3,4,5],
@@ -26,6 +28,7 @@
             board[position] = symbols[playerTime]
 
             gameOver = isWin()
+            checkBoard()
 
         if(gameOver == false){
 
@@ -56,5 +59,18 @@
         }
 
         return false
+
+    }
+
+    function checkBoard() {
+
+        let cont = 0
+        board.forEach(item => {
+            if(item != '') cont++
+        })
+        if(cont == board.length) {
+            draw = true 
+            gameOver = true
+        }
 
     }
