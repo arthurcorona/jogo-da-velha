@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     button.addEventListener('click', sendName);
 
     function sendName() {
-        if(npme.value != 0 && player1.innerText == "Player IOS") {
+        if(nome.value != 0 && player1.innerText == "Player IOS") {
             let string = nome.value; 
             player1.innerHTML = string[0].toUpperCase() +  
             string.slice(1); 

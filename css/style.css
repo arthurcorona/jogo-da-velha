@@ -117,7 +117,6 @@ button:hover{
     width: 80%;
     height: 220px;
     background-color: rgb(63, 56, 56);
-    background-image: url(/img/winner.svg);
     background-size: cover;
     background-position: top;
     background-blend-mode: multiply;
@@ -168,7 +167,7 @@ button:hover{
     height: 25px;
     border: none;
     background-color: beige;
-    font-size: 25px;
+    font-size: 18px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid gray;
