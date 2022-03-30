@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
 
     let pieces = document.querySelectorAll(".piece")
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let button = document.getElementById("button");
     let placar1 = document.getElementById("placarA");
     let placar2 = document.getElementById("placarD");
-    let cont = 1;
+    let cont1 = 1;
     let cont2 = 1;
 
     button.addEventListener('click', sendName);
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             player1.innerHTML = string[0].toUpperCase() +  
             string.slice(1); 
             nome.value = "";
-            nome.placeholder = "PlAYER 2 (ANDROID)"
+            nome.placeholder = "PlAYER 2 "
         }
      else{
         let string = nome.value; 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 if(draw){
                     document.getElementById("display").innerHTML = "Deu velha!";
                     document.querySelectorAll(".p").forEach(p => p.style.display = "none");
-                    openWindow()
+                    openWindow()    
 
                     return
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 console.log(player1);
                 console.log(player2);
                  if (display == player1.innerText) {
-                       placar1.innerText = cont ++
+                       placar1.innerText = cont1 ++
                        
                     }
                     
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     function openWindow() {
-//parei aq pit bull
+
         document.getElementById("windowWinner").style.display = "block"
         document.getElementById("backgroundWinner").style.display = "block"
         
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
             document.querySelectorAll(".p").forEach(p => p.style.display = "block")
             restart()
-            }, 2000)
+            }, 2500)
 
 
     }

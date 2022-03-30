@@ -42,7 +42,7 @@
 
     function isWin() {
 
-        for(let i = 0; i < winStates.length; i++) {
+        for(var i = 0; i < winStates.length; i++) {
             let seq = winStates[i]
             
             let pos1 = seq[0]
@@ -64,11 +64,11 @@
 
     function checkBoard() {
 
-        let cont = 0
+        let cont1 = 0
         board.forEach(item => {
-            if(item != '') cont++
+            if(item != '') cont1++
         })
-        if(cont == board.length) {
+        if(cont1 == board.length) {
             draw = true 
             gameOver = true
         }

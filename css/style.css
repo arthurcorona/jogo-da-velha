@@ -71,6 +71,8 @@ button:hover{
     cursor: pointer;
 }
 
+/* ///////////////////////////////////////////////// */
+
 .players{
     margin-left: 150px;
     margin-top: 0px;
@@ -107,7 +109,7 @@ button:hover{
 }
 
 #button:hover {
-    background-color: rgb(143, 172, 96);
+    background-color: rgb(140, 160, 108);
     cursor: pointer;
 }
 
@@ -140,7 +142,7 @@ button:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(rgb(24, 12, 12), rgb(4, rgb(27, 27, 34)), rgb(11, 11, 15), 0.56);
+    background-color: rgb(0,0,0);
 }
 
 #display {
@@ -153,7 +155,7 @@ button:hover{
     display: block;
     margin: 0 0 20px;
     font-size: 30px;
-    color: rgb(59, 59, 59);
+    color:antiquewhite
 }
 .p2{
     position: absolute;
@@ -188,3 +190,7 @@ button:hover{
 }
 
 
+.xx{
+    color: rgb(146, 0, 231);
+    font-size: 50px;
+}
