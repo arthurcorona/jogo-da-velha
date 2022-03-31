@@ -20,13 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     button.addEventListener('click', sendName);
 
+    //eviando os nomes com o botao
+
     function sendName() {
         if(nome.value != 0 && player1.innerText == "Player IOS") {
             let string = nome.value; 
             player1.innerHTML = string[0].toUpperCase() +  
             string.slice(1); 
             nome.value = "";
-            nome.placeholder = "PlAYER 2 "
+            nome.placeholder = "PlAYER 2"
         }
      else{
         let string = nome.value; 
@@ -45,7 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
         if(handleMove(position)){
 
-            setTimeout(()=> {
+            //Empate
+
+            setTimeout(() => {
                 if(draw){
                     document.getElementById("display").innerHTML = "Deu velha!";
                     document.querySelectorAll(".p").forEach(p => p.style.display = "none");
@@ -57,13 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
             
                 playerTime = `${"Player " + (playerTime + 1)}`
 
-                if(playerTime == "PLAYER IOS" && player1.innerText > "" ) {
-
+                if(playerTime == "Player 1" && player1.innerText > "" ){
+                
                     playerTime = player1.innerHTML
 
                 } 
 
-                if(playerTime == "PLAYER DROID" && player2.innerText > "" ) {
+                if(playerTime == "Player 2" && player2.innerText > "" ) {
 
                     playerTime = player2.innerHTML
 
